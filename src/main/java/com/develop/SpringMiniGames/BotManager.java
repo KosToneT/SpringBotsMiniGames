@@ -42,9 +42,8 @@ public class BotManager {
         this.userDB = new UserDB(userRepo);
         this.reportRepo = reportRepo;
 
-        bots.add(new VKBot(216029096, "vk1.a.PxOTKqt8B5HyqTUmyQhfWESgBDslePM75D16P8AyuCD-9b8PBqbVw2Vju4JYnUOYdFY5VerR8vEPHAHCigJUR9zeSxIT6KK26yvIsKiGcDVPHkQqaSGMLBEvUkFYetWskkqlLxMpDRyrtkT2csTYkd_jhdxcjQIIVqMF37ZcWpNOdJmb9OCnegOYvazjyeJm"));
-        bots.add(new TGBot("5711386065:AAEME2MKLQuqT3_nRQ5O5uXno9zjqFOPuHw", "MiniGames"));
-        
+        bots.add(new VKBot(0, "TOKEN"));
+        bots.add(new TGBot("TOKEN", "BOTSNAME"));
         MessageObserver messageObserver = new MessageObserver();
         initMessageObserver(messageObserver);
 
